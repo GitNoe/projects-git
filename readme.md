@@ -1,5 +1,1 @@
-Ejercicios con Git
-
-Probando a ver diferencias entre commits
-
-Creando carpetas y archivos desde la consola
+Primera versión de la página del restaurante.
