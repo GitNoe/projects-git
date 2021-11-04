@@ -14,16 +14,15 @@
     <header class="cabeza">
       <!--presentar en 3 columnas-->
       <div class="head">
-        <img id="logo" src="../img/logo2.png" />
+        <img id="logo" src="../img/logo2.png" alt="logo-rest">
       </div>
       <div class="head">
         <nav>
           <ul>
-            <!-- <li>986 00 11 22</li> -->
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#">Menú</a></li>
-            <li><a href="#">Servicio</a></li>
-            <li><a href="#">Opiniones</a></li>
+            <li class="menu"><a href="#inicio">Inicio</a></li>
+            <li class="menu"><a href="#food">Menú</a></li>
+            <li class="menu"><a href="#service">Servicio</a></li>
+            <li class="menu"><a href="#opinion">Opiniones</a></li>
           </ul>
         </nav>
       </div>
@@ -36,7 +35,7 @@
     
     <main>
 
-      <section class="inicio">
+      <section class="inicio" id="inicio">
         <br>
         <h1>MY NEW RESTAURANT</h1>
         <br>
@@ -46,47 +45,107 @@
         <br>
       </section>
 
-      <section>
+      <section id="food">
         <h2>MENÚ DEL RESTAURANTE</h2>
-        <div>
-          <div>CARTA DEL DÍA</div>
-          <div>CARTA COMPLETA</div>
-          <div>BEBIDAS</div>
-          <div>POSTRES</div>
+        <br>
+        <div class="grid">
+          <div>
+            <div>CARTA DEL DÍA</div><br>
+            <div><img src="../img/menu-dia.jpg" alt="menú día"></div>
+          </div>
+          <div>
+            <div>CARTA COMPLETA</div><br>
+            <div><img src="../img/menu-completo.jpg" alt="menú completo"></div>
+          </div>
+          <div>
+            <div>BEBIDAS</div><br>
+            <div><img src="../img/bebida.jpg" alt="bebidas"></div>
+          </div>
+          <div>
+            <div>POSTRES</div><br>
+            <div><img src="../img/postres.jpg" alt="postres"></div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section id="service">
         <h2>SERVICIOS</h2>
-        <div>
-          <div>COMER EN LOCAL</div>
-          <div>RECOGER EN LOCAL</div>
-          <div>ENVÍO A DOMICILIO</div>
+        <br>
+        <div class="grid">
+          <div>
+            <div>COMER EN LOCAL</div><br>
+            <div><img src="../img/local.jpg" alt="local"></div>
+          </div>
+          <div>
+            <div>RECOGER EN LOCAL</div><br>
+            <div><img src="../img/recoger.jpg" alt="recoger"></div>
+          </div>
+          <div>
+            <div>ENVÍO A DOMICILIO</div><br>
+            <div><img src="../img/envío.jpg" alt="enviar"></div>
+          </div>
         </div>
       </section>
 
-      <section>
-        <!--presentar como grid que se desplace?-->
-        <h2>OPINIONES</h2>
-        <div>
-          <div>opinión 1</div>
-          <div>opinión 2</div>
-          <div>opinión 3</div>
-          <div>opinión 4</div>
-        </div>
-        <div>
-          <!--formulario-->
-          Envíanos tu comentario
+      <section id="opinion">
+        <h2>¿Sabes qué opinan de nosotros?</h2>
+        <br>
+        <div class="reviews">
+          <div>
+            <p>"El mejor restaurante de Vigo, lo recomiendo 100%" - Michael</p>
+          </div>
+          <div>
+            <p>"Nos ha alegrado las vacaciones, volveremos el año que viene" - Pamela</p>
+          </div>
+          <div>
+            <p>"Excelente cocina gallega con un buen ambiente y comidas variadas" - Sabela</p>
+          </div>
+          <div>
+            <h3><center>Envíanos tu comentario</center></h3><br>
+            <form>
+              <ul>
+                <li>
+                  <label>Nombre &nbsp;</label>
+                  <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                </li><br>
+                <li>
+                  <label>Comentario<br></label>
+                  <textarea name="comentarios" id cols="30" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
+                </li><br>
+                <li>
+                  <button type="submit">Enviar</button>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </section>
+
     </main>
+    <hr>
 
     <footer> <!--cuatro columnas-->
-      <div>
-        <div>Dirección, CP, Provincia, España</div>
-        <div>Mapa</div>
-        <div>Horario</div>
-        <div>Redes sociales, teléfono</div>
+      <div class="pies">
+        <div class="foot">
+          <p>C/ Pérez Bellas, 9</p><br>
+          <p>36200</p><br>
+          <p>Vigo, Pontevedra</p><br>
+          <p>España</p>
+        </div>
+        <div class="foot">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.4635404726896!2d-8.734588284547948!3d42.22590897919622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f620e636dac4d%3A0xbd197515daf7d21a!2sR%C3%BAa%20Arquitecto%20P%C3%A9rez%20Bellas%2C%209%2C%2036211%20Vigo%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1636016303918!5m2!1ses!2ses" 
+          width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="foot">
+          <p>Lunes - Viernes:<br><br>12:00-16:00 & 20:00-00:00</p><br>
+          <p>Sábado:<br><br>12:00-16:00 & 20:00-03:00</p><br>
+          <p>Domingo: descansamos</p>
+        </div>
+        <div class="foot">
+          <p>986 00 11 22</p><br>
+          <p>Twitter</p><br>
+          <p>Instagram</p>
+        </div>
       </div>
     </footer>
   </body>
